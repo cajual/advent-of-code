@@ -1,7 +1,5 @@
 # /usr/bin/env python
 
-import re
-
 
 def read_file(file) -> list:
     """
@@ -30,7 +28,7 @@ def decipher() -> int:
     f = read_file("./data/input.txt")
 
     for i in range(0, len(f[0]) - 4):
-        string = sorted(set(f[0][i:i+4]))
+        string = sorted(set(f[0][i : i + 4]))
         if len(string) == 4:
             return i + 4
 

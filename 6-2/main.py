@@ -1,7 +1,5 @@
 # /usr/bin/env python
 
-import re
-
 
 def read_file(file) -> list:
     """
