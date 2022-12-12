@@ -14,6 +14,15 @@ def read_file(file: bytes) -> list:
 
 
 def update_sprite(screen: list, register: int, current_cycle: int) -> None:
+    """
+    Update the position of the sprite and draw an entry on the screen if the
+    current location matches the sprite.
+
+    Args:
+        screen (list): An existing screen of an arbitrary size
+        register (int): The location of the current sprite
+        current_cycle (int): The location of the screen renderer
+    """
     row = 0
     for i in range(40, 240, 40):
         if current_cycle > i:
